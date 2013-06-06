@@ -33,12 +33,5 @@
         "locale": "zh_TW.UTF-8",
         "db_password": "lqg0v"
     },
-    "name": "lqfb-test.g0v.tw",
-    "run_list": [
-        "recipe[postfix]",
-        "recipe[postfix::sasl_auth]",
-        "recipe[sesgateway]",
-        "recipe[postgresql::server]"
-        "recipe[liquid-feedback]"
-    ]
+    "name": "lqfb-test.g0v.tw"
 }
