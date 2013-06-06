@@ -1,0 +1,16 @@
+site :opscode
+
+cookbook 'database', '1.3.10'
+cookbook 'postgresql', '3.0.0'
+cookbook 'mercurial', github: 'opscode-cookbooks/mercurial'
+cookbook 'git'
+cookbook 'python'
+cookbook 'nginx'
+cookbook 'postfix'
+cookbook 'stunnel', path: '/Users/clkao/git/cookbooks/stunnel'
+cookbook 'sesgateway', path: '/Users/clkao/git/cookbooks/sesgateway'
+cookbook 'pgrest', github: 'clkao-cookbooks/pgrest'
+# cookbook 'liquid-feedback', github: 'clkao-cookbooks/liquid-feedback'
+cookbook 'liquid-feedback', path: '/Users/clkao/git/cookbooks/liquid-feedback'
+cookbook 'apt', github: 'opscode-cookbooks/apt'
+cookbook 'nodejs', github: 'phlipper/chef-nodejs'
