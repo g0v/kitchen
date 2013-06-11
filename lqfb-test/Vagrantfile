@@ -15,11 +15,12 @@ EOF
     chef.add_recipe 'postgresql'
     chef.add_recipe 'postgresql::server'
     chef.add_recipe "liquid-feedback"
+    chef.add_recipe "nginx::repo"
+    chef.add_recipe "nginx"
 
 #    chef.add_recipe 'postfix'
 #    chef.add_recipe 'postfix::sasl_auth'
 #    chef.add_recipe 'sesgateway'
- 
     # You may also specify custom JSON attributes:
     chef.json.merge!(JSON.parse(File.read("./dna.json")))
   end
