@@ -1,6 +1,6 @@
 site :opscode
 
-cookbook 'database', '1.3.10'
+cookbook 'database', github: 'clkao-cookbooks/database'
 cookbook 'postgresql', '3.0.0'
 cookbook 'mercurial', github: 'opscode-cookbooks/mercurial'
 cookbook 'git'
@@ -13,3 +13,4 @@ cookbook 'pgrest', github: 'clkao-cookbooks/pgrest'
 cookbook 'liquid-feedback', github: 'clkao-cookbooks/liquid-feedback'
 cookbook 'apt', github: 'opscode-cookbooks/apt'
 cookbook 'nodejs', github: 'phlipper/chef-nodejs'
+cookbook 'fcgiwrap', github: 'pioneerit/fcgiwrap-cookbook'

@@ -6,10 +6,6 @@
     "postgresql": {
         "enable_pgdg_apt": true,
         "version": "9.2",
-        "config": { "ssl": false },
-        "server": {
-            "packages": ["postgresql-9.2", "postgresql-server-dev-9.2"]
-        },
         "pg_hba": [
             {"type": "local", "db": "all", "user": "postgres", "addr": null, "method": "ident"},
             {"type": "local", "db": "all", "user": "lf_g0v", "addr": null, "method": "password"},
@@ -21,7 +17,7 @@
         }
     },
     "domain": "g0v.tw",
-    "fqdn": "lqfb-test.g0v.tw",
+    "fqdn": "localhost",
     "lf": {
         "core_repo_type": "git",
         "core_repo": "https://github.com/g0v/liquid_feedback_core.git",
@@ -38,7 +34,7 @@
         "organisation": "g0v",
         "area": "The Internet",
         "locale": "zh_TW.UTF-8",
-        "db_password": "lqg0v"
+        "db_password":"lqg0v"
     },
     "name": "lqfb-test.g0v.tw"
 }
